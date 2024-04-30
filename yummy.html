@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yummy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
+        <link rel="stylesheet" href="./bootstrap.min.css"> 
+        <link rel="stylesheet" href="./yummy.css"> 
+    </head>
+
+
+    <body>
+        <!--  Loading screen  -->
+        <div id="loading-screen">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+              </div>
+        </div>
+
+        <!-- Side Navbar menu -->
+        <div class="side-nav">
+            <div class="side-nav-inner px-4 pt-3 text-white ">
+                <div class="side-nav-list">
+                    <ul class="list-unstyled pt-1 overflow-hidden">
+                        <li class="py-2 pointer" id="search">Search</li>
+                        <li class="py-2 pointer" id="category">Categories</li>
+                        <li class="py-2 pointer" id="area">Area</li>
+                        <li class="py-2 pointer" id="ingredients">Ingredients</li>
+                        <li class="py-2 pointer" id="contactUs">Contact Us</li>
+                    </ul>    
+                </div>
+                <div class="pb-4 align-self-end">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook pointer"></i>
+                        <i class="fa-brands fa-twitter pointer"></i>
+                        <i class="fa-solid fa-globe pointer"></i>
+                    </div>
+                    <div class="">
+                        <p>Copyright Â© 2019 All Rights<br> Reserved.</p>
+                    </div>    
+                </div>
+            </div>
+            <div class="side-nav-out pt-3 pb-4 px-2">
+                <img class="logo" src="logo.png" alt="" width="50px">
+                <i class="fa-solid fa-align-justify fa-2x pointer" id="slider-btn"></i>
+                <div>
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>    
+            </div>
+        </div>
+
+     <div id="inner-loading-screen">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+              </div>
+     </div>
+
+
+    <div class="container" id="outerContainer">
+        <div class="row pt-5 d-none d-flex" id="row">
+                <div class="col-md-6">
+                    <input class="form-control bg-transparent text-white placeholder-color" placeholder="Search By Name" oninput="handleNameInput(`${this.value}`)">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control bg-transparent text-white placeholder-color" placeholder="Search By First Letter" oninput="handleLetterInput(`${this.value}`)" maxlength="1">
+                </div>
+        </div>
+        <div class="row py-5 g-4 " id="container">
+
+        </div>
+    </div>
+
+
+        <script src="./bootstrap.bundle.min.js"></script>
+        <script src="./jquery-3.7.1.min.js"></script>
+        <script src="./yummy.js"></script>
+    </body>
+</html>
